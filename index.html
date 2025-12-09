@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laxmi Patil | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">Laxmi<span>Patil</span></div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-left reveal">
+            <p class="tagline">Full Stack Web Developer</p>
+            <h1>Hi, I'm <span class="accent">Laxmi</span> 👋</h1>
+            <p class="hero-text">
+                I build web applications using Java, PHP, React, and MySQL.
+                I love creating practical solutions in health-tech, travel planning,
+                and expense management.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn outline">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="hero-right reveal">
+            <img src="profile.jpg" alt="Laxmi Patil" class="profile-img"/>
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="skills-wrapper reveal">
+            <div class="skill-box">
+                <h3>Programming</h3><p>Java, Python, OOP</p>
+            </div>
+            <div class="skill-box">
+                <h3>Frontend</h3><p>HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="skill-box">
+                <h3>Backend</h3><p>Java Servlets, JSP, PHP, REST APIs</p>
+            </div>
+            <div class="skill-box">
+                <h3>Database</h3><p>MySQL</p>
+            </div>
+            <div class="skill-box">
+                <h3>Tools</h3><p>Git, GitHub, Postman</p>
+            </div>
+            <div class="skill-box">
+                <h3>Soft Skills</h3><p>Communication, Teamwork, Problem Solving</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2 class="section-title reveal">Projects</h2>
+        <div class="projects-grid">
+
+            <div class="project-card reveal"
+                 data-title="HerCare – Women’s Health Web App"
+                 data-desc="A health-tech platform helping women with PCOD/PCOS to track symptoms and get recommendations."
+                 data-github="https://github.com/LaxmiiPatil/HerCare">
+                <h3>HerCare – Women’s Health Web App</h3>
+                <p>React + Spring Boot + MySQL</p>
+            </div>
+
+            <div class="project-card reveal"
+                 data-title="Planify – Travel Planner Website"
+                 data-desc="A travel planning system with recommendations, budget management, and maps routing."
+                 data-github="https://github.com/LaxmiiPatil/Planify">
+                <h3>Planify – Travel Planner</h3>
+                <p>PHP + JS + MySQL</p>
+            </div>
+
+            <div class="project-card reveal"
+                 data-title="Expense Splitter & Budget Buddy"
+                 data-desc="Manage group expenses with Java Servlets, JSP and MySQL."
+                 data-github="https://github.com/LaxmiiPatil/Expense-Splitter">
+                <h3>Expense Splitter</h3>
+                <p>Java Servlets + JSP</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2 class="section-title reveal">Contact</h2>
+        <p class="reveal"><b>Email:</b> <a href="mailto:laxmippatil17@gmail.com">laxmippatil17@gmail.com</a></p>
+        <p class="reveal"><b>Location:</b> Pune, India</p>
+    </section>
+
+</main>
+
+<footer class="footer">
+    © 2025 Laxmi Patil. All Rights Reserved.
+</footer>
+
+<!-- MODAL VIEW -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+        <a id="modalGithub" target="_blank" class="btn primary">GitHub ↗</a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
